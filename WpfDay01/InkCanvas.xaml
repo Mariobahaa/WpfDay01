@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WpfDay01"
         mc:Ignorable="d"
         Title="InkCanvas" Height="450" Width="800">
-    <Grid>
+
+    <ScrollViewer HorizontalScrollBarVisibility="Visible">
+        <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -64,7 +66,6 @@
                 </StackPanel>
 
             </GroupBox>
-
             <UniformGrid >
                 <Button Content="New"
                         Margin="5"
@@ -105,8 +106,9 @@
                         Click="Button_Click_3"
                         ></Button>
             </UniformGrid>
-
+            
         </StackPanel>
        
     </Grid>
+    </ScrollViewer>
 </Window>

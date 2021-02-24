@@ -97,5 +97,39 @@ namespace WpfDay01
             ink.Strokes = strokes;
             r.Close();
         }
+
+        private void RadioButton_Checked_2(object sender, RoutedEventArgs e)
+        {
+            switch (((RadioButton)sender).Content.ToString())
+            {
+                case "Elipse":
+                    ink.DefaultDrawingAttributes.StylusTip = StylusTip.Ellipse;
+                break;
+                case "Rect":
+                    ink.DefaultDrawingAttributes.StylusTip = StylusTip.Rectangle;
+                break;
+
+            }
+        }
+
+        private void RadioButton_Checked_3(object sender, RoutedEventArgs e)
+        {
+            switch (((RadioButton)sender).Content.ToString())
+            {
+                case "Small":
+                    ink.DefaultDrawingAttributes.Width = 2;
+                    ink.DefaultDrawingAttributes.Height = 2;
+                    break;
+                case "Normal":
+                    ink.DefaultDrawingAttributes.Width = 8;
+                    ink.DefaultDrawingAttributes.Height = 8;
+                    break;
+                case "Large":
+                    ink.DefaultDrawingAttributes.Width = 15;
+                    ink.DefaultDrawingAttributes.Height = 15 ;
+                    break;
+
+            }
+        }
     }
 }

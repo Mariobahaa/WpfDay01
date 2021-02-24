@@ -46,9 +46,21 @@
             <GroupBox  Margin="10" Width="120" Header="Shape">
                 <StackPanel Background="LightCyan">
 
-                    <RadioButton Margin="5" Content="Elipse"></RadioButton>
-                    <RadioButton  Margin="5"  Content="Rect"></RadioButton>
+                    <RadioButton Margin="5" Content="Elipse" Checked="RadioButton_Checked_2"></RadioButton>
+                    <RadioButton  Margin="5"  Content="Rect" Checked="RadioButton_Checked_2"></RadioButton>
                     
+                </StackPanel>
+
+            </GroupBox>
+
+            <GroupBox  Margin="10" Width="120" Header="Brush Size">
+                <StackPanel Background="YellowGreen">
+
+                    <RadioButton Margin="5" Content="Small" Checked="RadioButton_Checked_3"></RadioButton>
+                    <RadioButton  Margin="5"  Content="Normal" Checked="RadioButton_Checked_3"></RadioButton>
+                    <RadioButton  Margin="5"  Content="Large" Checked="RadioButton_Checked_3"></RadioButton>
+
+
                 </StackPanel>
 
             </GroupBox>

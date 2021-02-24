@@ -1,0 +1,100 @@
+﻿<Window x:Class="WpfDay01.InkCanvas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDay01"
+        mc:Ignorable="d"
+        Title="InkCanvas" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+
+        <Border   BorderBrush="Blue"
+                CornerRadius="10"
+                BorderThickness="2"
+                Margin="5">
+            <InkCanvas Name="ink"></InkCanvas>
+        </Border>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            
+        <GroupBox  Margin="10" Width="120" Header="Color">
+                <StackPanel Background="Pink">
+
+                    <RadioButton Checked="RadioButton_Checked" Margin="5" Content="Red"></RadioButton>
+                    <RadioButton Checked="RadioButton_Checked"  Margin="5"  Content="Green"></RadioButton>
+                    <RadioButton  Checked="RadioButton_Checked" Margin="5"  Content="Blue"></RadioButton>
+                </StackPanel>
+            
+        </GroupBox>
+
+
+            <GroupBox  Margin="10" Width="120" Header="Mode">
+                <StackPanel Background="SkyBlue">
+
+                    <RadioButton  Checked="RadioButton_Checked_1" Margin="5" Content="Ink"></RadioButton>
+                    <RadioButton   Checked="RadioButton_Checked_1" Margin="5"  Content="Select"></RadioButton>
+                    <RadioButton   Checked="RadioButton_Checked_1" Margin="5"  Content="Erase"></RadioButton>
+                    <RadioButton   Checked="RadioButton_Checked_1" Margin="5"  Content="EarseByStroke"></RadioButton>
+                </StackPanel>
+
+            </GroupBox>
+
+            <GroupBox  Margin="10" Width="120" Header="Shape">
+                <StackPanel Background="LightCyan">
+
+                    <RadioButton Margin="5" Content="Elipse"></RadioButton>
+                    <RadioButton  Margin="5"  Content="Rect"></RadioButton>
+                    
+                </StackPanel>
+
+            </GroupBox>
+
+            <WrapPanel >
+                <Button Content="New"
+                        Margin="5"
+                        Width="70"
+                        Height="30" 
+                        Click="Button_Click"
+                        ></Button>
+                
+                
+                <Button Content="Save"
+                        Margin="5"
+                        Width="70"
+                        Height="30"
+                        Click="Button_Click_4"
+                        ></Button>
+                <Button Content="Load"
+                        Margin="5"
+                        Width="70"
+                        Height="30" 
+                        Click="Button_Click_5"
+                        ></Button>
+                <Button Content="Copy"
+                        Margin="5"
+                        Width="70"
+                        Height="30" 
+                        Click="Button_Click_1"
+                        ></Button>
+                <Button Content="Cut"
+                        Margin="5"
+                        Width="70"
+                        Height="30"
+                        Click="Button_Click_2"
+                        ></Button>
+                <Button Content="Past"
+                        Margin="5"
+                        Width="70"
+                        Height="30" 
+                        Click="Button_Click_3"
+                        ></Button>
+            </WrapPanel>
+
+        </StackPanel>
+       
+    </Grid>
+</Window>

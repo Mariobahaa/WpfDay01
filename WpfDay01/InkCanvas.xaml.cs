@@ -58,6 +58,9 @@ namespace WpfDay01
                     ink.EditingMode = InkCanvasEditingMode.EraseByPoint;
 
                     break;
+                case "EarseByStroke":
+                    ink.EditingMode = InkCanvasEditingMode.EraseByStroke;
+                    break;
             }
 
         }
